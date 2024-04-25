@@ -35,7 +35,7 @@ const Login = () => {
       <input type="password" id="password" name="password" className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" autocomplete="off" onKeyUp={(e)=>dispatch(setLoginData({...loginDetails,password:e.target.value}))}/>
     </div>
     
-    <button type="button" className="bg-green-600 hover:bg-black text-white font-semibold rounded-md py-2 px-4 w-full" onClick={()=>checkLogin(navigate("/main"))}>Login</button>
+    <button type="button" className="bg-green-600 hover:bg-black text-white font-semibold rounded-md py-2 px-4 w-full" onClick={()=>navigate("/main")}>Login</button>
   </form>
   <div className="mt-6 text-green-600 text-center">
     <a href="/signup" className="hover:underline"> If you are have not an account. <br/>Sign up Here</a>

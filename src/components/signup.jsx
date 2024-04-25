@@ -60,7 +60,7 @@ const SignUp = () => {
 							</svg>
 							<input className = "pl-2 outline-none border-none" type = "text" name = "" id = "" placeholder = "Password" onKeyUp = {(e)=>dispatch(setSignUpData({...signUpDetails,password:e.target.value}))} required/>
       </div>
-							<button type = "button" className = "block w-full bg-green-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2" onClick={()=>storeSignUp(navigate("/login"))}>Sign Up</button>
+							<button type = "button" className = "block w-full bg-green-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2" onClick={()=>navigate("/login")}>Sign Up</button>
 		</form>
 	</div>
 </div>
